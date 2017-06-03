@@ -10,6 +10,7 @@
             <th>Title</th>
             <th>URL</th>
             <th>Description</th>
+            <th>By</th>
             <th>Actions</th>
           </tr>
 
@@ -19,6 +20,7 @@
                 <td>{{ $todo->title }}</td>
                 <td>{{ $todo->url }}</td>
                 <td>{{ $todo->description }}</td>
+                <td>{{ $todo->user->name }}</td>
                 <td>
                   <form method="post" action="/todo/{{ $todo->id }}">
                     <input name="_token" type="hidden" value="{{ csrf_token() }}">

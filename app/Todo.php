@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
 {
-	protected $fillable = ['title','url','description'];
+	protected $fillable = ['user_id', 'title','url','description'];
+
+	public function user()
+	{
+		return $this->belongsTo(User::class, 'user_id');
+	}
 	 
 }
