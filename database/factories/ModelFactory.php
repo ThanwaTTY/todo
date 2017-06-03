@@ -28,6 +28,7 @@ $factory->define(App\Todo::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->title,
         'url' => $faker->url,
-        'description' => $faker->sentence
+        'description' => $faker->sentence,
+        'user_id'=> factory(App\User::class)->create()
     ];
 });
