@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h1>My Todo</h1>
-        <a href="todo/create" type="Text" class="btn btn-primary">New Todo</a>
+        <a href="/todo/create" type="Text" class="btn btn-primary">New Todo</a>
         <table class="table table-bordered">
           <tr>
             <th>id</th>
