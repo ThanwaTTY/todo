@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Todo</h1>
+        <h1>My Todo</h1>
         <a href="todo/create" type="Text" class="btn btn-primary">New Todo</a>
         <table class="table table-bordered">
           <tr>
